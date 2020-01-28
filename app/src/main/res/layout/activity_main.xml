@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageButton
+            android:id="@+id/btnTriangle"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/triangle"
+            app:layout_constraintBottom_toTopOf="@+id/btnSquare"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnCircle"
+            app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+        <ImageButton
+            android:id="@+id/btnPentagon"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/pentagon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSquare"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCircle" />
+
+        <ImageButton
+            android:id="@+id/btnSquare"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/square"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnPentagon"
+            app:layout_constraintTop_toBottomOf="@+id/btnTriangle" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre_Figura"
+            android:textAlignment="center"
+            android:textColor="#D81B60"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.124" />
+
+        <ImageButton
+            android:id="@+id/btnCircle"
+            style="@android:style/Widget.DeviceDefault.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00000000"
+            android:src="@drawable/circle"
+            app:layout_constraintBottom_toTopOf="@+id/btnPentagon"
+            app:layout_constraintEnd_toStartOf="@+id/btnTriangle"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtResult" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
